@@ -1,0 +1,61 @@
+.navigation{
+    width: 1535px;
+    background-color: whitesmoke;
+    margin: auto;
+    overflow: auto;
+    font-family:fantasy;
+}
+.navigation li{
+    float: top;
+    padding: 10px 10px;
+    margin: 3px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(122, 200, 252);
+}
+.a{
+    float: center;
+}
+.aboutastro h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.aboutastro h2{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.aboutastro p{
+    text-align: center;
+
+}
+.aboutastro h3{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.aboutastro tabel{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid powderblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;   
+}
+.footer {
+    background-position-y: center;
+    width: 12500px;
+    height: 25px;
+    margin: auto;
+    float: left;
+    padding: 10px 30px;
+    color: powderblue;
+    margin-top:  5px;
+    background-color: whitesmoke;
+}
