@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Minggu3</title>
+</head>
+<body>
+    <div class="body">
+        <label>select theme : </label>
+        <select class="color" id="color" onchange="changetheme()">
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="grey">Grey</option>
+        </select>
+        <script>
+            function changetheme(){
+                var theme = document.getElementById("theme"); 
+                var tema =  document.body; 
+                if (color.value == "blue" ){
+                    tema.style.backgroundColor = "blue";
+                    theme.style.color = "black";
+                } else if(color.value == "white" ){
+                    tema.style.backgroundColor = "white";
+                    theme.style.color = "black";
+                } else if(color.value == "grey" ){
+                    tema.style.backgroundColor = "grey";
+                    theme.style.color = "black";
+                }
+            } 
+        </script>
+    </div><br>
+    <h1>This is my website</h1>
+    <br>
+    <div>
+        <label>Select the weather type today : </label>
+        <select class="weather" id="weather" onchange="changecuaca()">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cloudy">Cloudy</option>
+        </select>
+        <p id="note" note="">It is nice and sunny outside today. Wear shorts! Go to the beach, or the park and get an ice cream.</p>
+        <script>
+            function changecuaca(){
+                var note = document.getElementById("note");
+        
+                if (weather.value == "rainy"){
+                    note.innerText = "It is rain outside. Wear your rain coat and umbrella! Don't get cold!";
+                } else if (weather.value == "sunny"){
+                    note.innerText = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park and get an ice cream.";
+                } else if (weather.value == "cloudy"){
+                    note.innerText = "It is cloudy and sweet outside today. Let's take a walk to the park!";
+                }
+            }
+        </script>
+    </div>
+    <div>
+        <form method="post" id="faktorial">
+            <label>Input number : </label><input id="angka" type="text"><label> </label><input type="button" value="Get Factorial" onclick="faktorial()">
+        </form>
+        <p id="value"></p>
+        <script>
+            function faktorial(){
+                var n = document.getElementById("angka").value;
+                var v = document.getElementById("value");
+	            var faktor=1;
+
+	            for(x=1; x<=n; x++){
+                    faktor=faktor*x;
+                }
+                v.innerText = "The factorial of " + n + " is " + faktor;
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
