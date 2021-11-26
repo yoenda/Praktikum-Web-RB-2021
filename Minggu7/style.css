@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    font-family:'Lucida Console';
+}
+body{
+    background-image: url('image-from-rawpixel-id-2210775-jpeg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.isi{
+    margin-top: 2%;
+}
+.isi fieldset{
+    margin: 1% 1% 1% 1% ;
+    background-color: #f8f4e5;
+    box-shadow: 5px 10px #ffa580;
+    border: 2px solid rgba(0,0,0,1);
+}
+legend{
+    padding: 1.3%;
+    font-size: 17px;
+    color: black;
+    background-color:#ffa580;
+    border: 2px solid rgba(0,0,0,1);
+}
+.isi input{
+    padding: 1%;
+    margin: 1% 1% 1% 9% ;
+    width: 35%;
+    border-color: black;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.isi select{
+    padding: 1%;
+    margin: 1% 1% 1% 9% ;
+    width: 35%;
+    border-color: black;
+}
+#btn_tampil{
+    padding: 1%;
+    margin-left: 32%;
+    width: 35%;
+    border-color: #ffa580;
+    box-sizing: border-box;
+}
+h3{
+    margin: 3% 1% 1% 1%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+    border: 2px solid rgba(0,0,0,1);
+    background-color: #f8f4e5;
+    box-shadow: 5px 10px #95a4ff;
+}
+#tabeldata{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    box-shadow: 5px 10px #ffc8ff;
+}
+#tabeldata, tr, th{
+    padding: 20px;
+    background-color: #95a4ff;
+    color: black;
+    border: 2px solid rgba(0,0,0,1);
+}
+#tabeldata, tr, td{
+    padding: 20px;
+    background-color: #f8f4e5;
+    color: black;
+    border: 2px solid rgba(0,0,0,1);
+}
+#tbl_edit{
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+}
+#tbl_hapus{
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+}
+footer{
+    padding: 2%;
+    color: purple;
+    text-align: center;
+}

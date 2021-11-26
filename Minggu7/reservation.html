@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="setting.js"></script>
+</head>
+<body>
+    <div class="isi">
+        <fieldset>
+            <legend>Reserve Your Concert!</legend>
+                <form method="post" id="form_pembeli">
+                <input type="text" name="nama" placeholder="Name">
+                <input type="text" name="jenis_kelamin" placeholder="Sex"><br>
+                <input type="text" name="umur" placeholder="Old">
+                <input type="text" name="no_telepon" placeholder="Phone Number"><br>
+                <input type="button" id="btn_tampil" value="Submit">
+                <input type="button" id="edit" value="Edit" hidden>
+                <input type="button" id="batal" value="Batal" hidden>
+                </form>
+        </fieldset>
+    </div>
+    <h3>Booked List</h3>
+    <div id="tampil_data"></div>
+    <script>
+        $(document).ready(function(){
+            $('#tampil_data').load("output.php");
+            $('#btn_tampil').click(function(){
+                var data = $('#form_pembeli').serialize();
+                $.ajax({
+                    type : 'POST',
+                    url : "add.php",
+                    data : data,
+                    cache : false,
+                    success : function(data){
+                        $('#tampil_data').load(output.php);
+                    }
+                });
+            });
+        });
+    </script>
+    <br>
+    <footer>
+        <p>©Copyright Universe!</p>
+    </footer>
+</body>
+</html>
